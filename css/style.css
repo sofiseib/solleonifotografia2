@@ -1,0 +1,232 @@
+/*# sourceMappingURL=style.scss.map */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap");
+* {
+  margin: 0;
+  scroll-behavior: smooth;
+  padding: 0;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+}
+body .nav {
+  display: flex;
+  justify-content: space-between;
+}
+body .nav .logo {
+  display: flex;
+  text-decoration: none;
+  font-size: 30px;
+  letter-spacing: 10px;
+  padding: 0 40px;
+  line-height: 80px;
+  color: black;
+}
+body .nav img {
+  height: 50px;
+}
+body .header {
+  width: 100%;
+}
+body .barranav {
+  display: flex;
+  margin-right: 40px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+body .barranav .barra-item1 {
+  order: 1;
+}
+body .barranav .barra-item2 {
+  order: 2;
+}
+body .barranav .barra-item3 {
+  order: 3;
+}
+body .barranav .barra-item4 {
+  order: 4;
+}
+body .barranav .barra-item5 {
+  order: 5;
+}
+@media all and (min-width: 600px) {
+  body .barranav {
+    justify-content: center;
+  }
+  body .barranav .barra-item1 {
+    display: block;
+    width: auto;
+    order: 1;
+  }
+  body .barranav .barra-item2 {
+    display: block;
+    width: auto;
+    order: 2;
+  }
+  body .barranav .barra-item3 {
+    display: block;
+    width: auto;
+    order: 3;
+  }
+  body .barranav .barra-item4 {
+    display: block;
+    width: auto;
+    order: 4;
+  }
+  body .barranav .barra-item5 {
+    display: block;
+    width: auto;
+    order: 5;
+  }
+}
+body li {
+  letter-spacing: 5px;
+  font-size: 18px;
+  margin: 0 14px;
+  line-height: 80px;
+  width: max-content;
+}
+body li a {
+  text-decoration: none;
+  color: black;
+}
+body li .barra-link:hover {
+  color: rgb(245, 208, 178);
+  transition: 0.3s;
+}
+body .foto-home {
+  background-image: url(../imagenes/img1.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 500px;
+}
+body .presentacion {
+  width: 100%;
+}
+body .presentacion img {
+  height: 450px;
+  padding: 50px;
+}
+body .presentacion aside {
+  padding: 50px;
+}
+body .presentacion h2 {
+  text-align: center;
+}
+body .presentacion p {
+  letter-spacing: 1px;
+}
+
+.footer {
+  width: 100%;
+  height: 180px;
+  background-color: rgb(245, 208, 178);
+}
+.footer i {
+  font-size: 30px;
+  letter-spacing: 20px;
+  color: white;
+}
+.footer .ruta {
+  text-decoration: none;
+  justify-content: center;
+  font-size: 15px;
+  color: white;
+}
+.footer .ruta:hover {
+  transition: 0.5s;
+  color: black;
+}
+.footer .logo-f {
+  padding: 30px;
+}
+.footer .logo-foot {
+  font-size: 40px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+.footer .social {
+  padding: 40px;
+}
+
+.aboutme {
+  width: 100%;
+  height: 500px;
+}
+.aboutme img {
+  height: 450px;
+  padding: 30px;
+}
+.aboutme h2 {
+  text-align: center;
+}
+.aboutme p {
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 450px;
+  padding: 20px;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+.gallery-container .gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.gallery-container .gallery-item:nth-child(2) {
+  grid-column-start: span 2;
+}
+.gallery-container .gallery-item:nth-child(3) {
+  grid-column-start: span 2;
+}
+.gallery-container .gallery-item:nth-child(7) {
+  grid-row-start: span 2;
+}
+.gallery-container .gallery-item:nth-child(10) {
+  grid-column-start: span 2;
+}
+@media (min-width: 768px) {
+  .gallery-container .gallery-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.services_card img {
+  height: 450px;
+}
+.services_card li {
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+.services_card a {
+  background-color: rgb(245, 208, 178);
+}
+.services_card a:hover {
+  transition: scale 0.5s;
+  background-color: rgb(245, 224, 212);
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 1fr 1fr 1fr;
+}
+
+.info-contact {
+  display: grid;
+  grid-template-columns: 1fr;
+  letter-spacing: 1px;
+}
+.info-contact .h2 {
+  justify-content: center;
+}
+
+/*# sourceMappingURL=style.css.map */
